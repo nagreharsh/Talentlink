@@ -51,15 +51,15 @@ You can explore and test all API endpoints directly in the browser.
 
 Swagger UI
 
-http://127.0.0.1:8000/api/docs/
+```http://127.0.0.1:8000/api/docs/```
 
 OpenAPI Schema
 
-http://127.0.0.1:8000/api/schema/
+```http://127.0.0.1:8000/api/schema/```
 
 Redoc Documentation
 
-http://127.0.0.1:8000/api/redoc/
+```http://127.0.0.1:8000/api/redoc/```
 
 
 The documentation allows developers to:
@@ -76,15 +76,15 @@ To use protected endpoints:
 
 1️⃣ Call the login API
 
-POST /api/login/
+```POST /api/login/```
 
 Example request
-
+```
 {
   "username": "client_user",
   "password": "password123"
 }
-
+```
 2️⃣ Copy the access token from the response
 
 3️⃣ Click **Authorize** in Swagger UI
@@ -254,20 +254,20 @@ GET  /api/users/
 Clients can create and manage projects.
 
 Project fields include:
-
+```
 title
 description
 budget
 duration
 skills_required
 status
-
+```
 Status values:
-
+```
 open
 in_progress
 completed
-
+```
 Endpoints
 
 ```
@@ -286,12 +286,12 @@ DELETE /api/projects/{id}/
 Freelancers submit proposals to projects.
 
 Proposal includes:
-
+```
 project
 freelancer
 bid_amount
 cover_letter
-
+```
 Duplicate proposals from the same freelancer to the same project are prevented.
 
 Endpoints
@@ -312,15 +312,15 @@ DELETE /api/proposals/{id}/
 A contract is created when a proposal is accepted.
 
 Contract statuses
-
+```
 draft
 active
 completed
-
+```
 Lifecycle
-
+```
 Proposal → Contract → Active Work → Completed
-
+```
 Endpoints
 
 ```
@@ -338,14 +338,14 @@ PATCH  /api/contracts/{id}/status/
 Users communicate inside contracts.
 
 Each message contains
-
+```
 contract
 sender
 receiver
 content
 is_read
 timestamp
-
+```
 Endpoints
 
 ```
@@ -360,11 +360,11 @@ PATCH  /api/messages/{id}/read/
 --------------------------------------------------
 
 Notifications are generated for important actions
-
+```
 • 💬 new message
 • 🔄 contract status change
 • ⭐ review submitted
-
+```
 Endpoints
 
 ```
@@ -380,12 +380,12 @@ PATCH /api/notifications/{id}/read/
 After a contract is completed users can review each other.
 
 Review contains
-
+```
 rating (1-5)
 comment
 reviewer
 reviewee
-
+```
 Duplicate reviews are prevented.
 
 Endpoints
@@ -418,12 +418,12 @@ permissions, validation, and workflow.
 Test Coverage
 
 9 automated tests including
-
+```
 • 🧪 Unit tests for models
 • 🔗 Integration workflow tests
 • 🔐 Permission validation
 • ✔ API validation tests
-
+```
 Run tests
 
 python manage.py test tests
@@ -447,7 +447,7 @@ Run
 python manage.py seed_demo_data --reset
 
 This generates
-
+```
 10 clients
 10 freelancers
 15 projects
@@ -456,12 +456,12 @@ active contracts
 completed contracts
 messages
 reviews
-
+```
 
 --------------------------------------------------
 📁 Project Structure
 --------------------------------------------------
-
+```
 freelance-backend/
 
 users/
@@ -482,7 +482,7 @@ manage.py
 requirements.txt
 README.md
 API_DOCUMENTATION.md
-
+```
 
 --------------------------------------------------
 ⚡ Quick Start
