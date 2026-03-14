@@ -161,7 +161,7 @@ Additional Libraries
 - 🛡 **Secure APIs:** Input sanitization, throttling, and permission checks ensure security.
 
 
-##🔄 Platform Workflow
+## 🔄 Platform Workflow
 
 ```
 Client registers/login
@@ -386,7 +386,7 @@ GET /api/admin/reviews/
 ```
 
 
-##🧪 Testing
+## 🧪 Testing
 
 The project includes automated tests covering models,
 permissions, validation, and workflow.
