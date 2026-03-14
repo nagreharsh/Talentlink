@@ -135,9 +135,7 @@ Review System
 ```
 
 
---------------------------------------------------
-⚙️ Tech Stack
---------------------------------------------------
+## ⚙️ Tech Stack
 
 🐍 Python  
 🌐 Django  
@@ -152,9 +150,7 @@ Additional Libraries
 🧼 bleach (input sanitization)
 
 
---------------------------------------------------
-🏗 System Architecture
---------------------------------------------------
+## 🏗 System Architecture
 
 ### Architecture Highlights
 
@@ -164,9 +160,8 @@ Additional Libraries
 - ⚙️ **Service Layer Logic:** Dashboard services aggregate platform data efficiently.
 - 🛡 **Secure APIs:** Input sanitization, throttling, and permission checks ensure security.
 
---------------------------------------------------
-🔄 Platform Workflow
---------------------------------------------------
+
+##🔄 Platform Workflow
 
 ```
 Client registers/login
@@ -194,9 +189,8 @@ Both users submit reviews
 ```
 
 
---------------------------------------------------
-⭐ Key Features
---------------------------------------------------
+
+## ⭐ Key Features
 
 • 🔐 Role based authentication (Client / Freelancer / Admin)
 
@@ -221,9 +215,7 @@ Both users submit reviews
 • 📜 Logging for important system actions
 
 
---------------------------------------------------
-🔐 Authentication
---------------------------------------------------
+## 🔐 Authentication
 
 Authentication uses JWT tokens.
 
@@ -245,9 +237,7 @@ GET  /api/users/
 ```
 
 
---------------------------------------------------
-📂 Projects
---------------------------------------------------
+## 📂 Projects
 
 Clients can create and manage projects.
 
@@ -277,9 +267,7 @@ DELETE /api/projects/{id}/
 ```
 
 
---------------------------------------------------
-📨 Proposals
---------------------------------------------------
+## 📨 Proposals
 
 Freelancers submit proposals to projects.
 
@@ -303,9 +291,8 @@ DELETE /api/proposals/{id}/
 ```
 
 
---------------------------------------------------
-📜 Contracts
---------------------------------------------------
+
+## 📜 Contracts
 
 A contract is created when a proposal is accepted.
 
@@ -329,9 +316,7 @@ PATCH  /api/contracts/{id}/status/
 ```
 
 
---------------------------------------------------
-💬 Messaging
---------------------------------------------------
+## 💬 Messaging
 
 Users communicate inside contracts.
 
@@ -353,9 +338,7 @@ PATCH  /api/messages/{id}/read/
 ```
 
 
---------------------------------------------------
-🔔 Notifications
---------------------------------------------------
+## 🔔 Notifications
 
 Notifications are generated for important actions
 ```
@@ -371,9 +354,8 @@ PATCH /api/notifications/{id}/read/
 ```
 
 
---------------------------------------------------
-⭐ Reviews
---------------------------------------------------
+
+## ⭐ Reviews
 
 After a contract is completed users can review each other.
 
@@ -394,9 +376,7 @@ GET   /api/reviews/?contract={contract_id}
 ```
 
 
---------------------------------------------------
-🛠 Admin APIs
---------------------------------------------------
+## 🛠 Admin APIs
 
 Admin endpoints provide system monitoring.
 
@@ -406,9 +386,7 @@ GET /api/admin/reviews/
 ```
 
 
---------------------------------------------------
-🧪 Testing
---------------------------------------------------
+##🧪 Testing
 
 The project includes automated tests covering models,
 permissions, validation, and workflow.
@@ -434,9 +412,7 @@ Auth → Project → Proposal → Contract → Review
 ```
 
 
---------------------------------------------------
-📊 Demo Data
---------------------------------------------------
+## 📊 Demo Data
 
 The project includes a demo data seeder.
 
@@ -456,9 +432,8 @@ messages
 reviews
 ```
 
---------------------------------------------------
-📁 Project Structure
---------------------------------------------------
+
+## 📁 Project Structure
 ```
 freelance-backend/
 
@@ -482,9 +457,8 @@ README.md
 API_DOCUMENTATION.md
 ```
 
---------------------------------------------------
-⚡ Quick Start
---------------------------------------------------
+
+## ⚡ Quick Start
 
 Clone repository
 
@@ -518,9 +492,7 @@ Start development server
 python manage.py runserver
 
 
---------------------------------------------------
-🎓 Learning Outcomes
---------------------------------------------------
+## 🎓 Learning Outcomes
 
 Through this project the following concepts were explored:
 
@@ -535,9 +507,7 @@ Through this project the following concepts were explored:
 • 📜 Logging important backend actions  
 
 
---------------------------------------------------
-📖 Project Context
---------------------------------------------------
+## 📖 Project Context
 
 This project was developed as part of the **Infosys Springboard Internship Program**
 under the mentorship of **Sridhar T**.
