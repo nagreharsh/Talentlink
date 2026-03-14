@@ -105,7 +105,7 @@ The API documentation automatically reflects all backend endpoints including:
 ⭐ Reviews  
 📊 Dashboard APIs
 
-
+<a id="project-overview"></a>
 ## 📌 Project Overview
 
 The platform simulates a freelancing marketplace where:
@@ -134,7 +134,7 @@ Contract Completion
 Review System
 ```
 
-
+<a id="tech-stack"></a>
 ## ⚙️ Tech Stack
 
 🐍 Python  
@@ -149,7 +149,7 @@ Additional Libraries
 🌍 django-cors-headers  
 🧼 bleach (input sanitization)
 
-
+<a id="system-architecture"></a>
 ## 🏗 System Architecture
 
 ### Architecture Highlights
@@ -160,7 +160,7 @@ Additional Libraries
 - ⚙️ **Service Layer Logic:** Dashboard services aggregate platform data efficiently.
 - 🛡 **Secure APIs:** Input sanitization, throttling, and permission checks ensure security.
 
-
+<a id="platform-workflow"></a>
 ## 🔄 Platform Workflow
 
 ```
@@ -189,7 +189,7 @@ Both users submit reviews
 ```
 
 
-
+<a id="key-features"></a>
 ## ⭐ Key Features
 
 • 🔐 Role based authentication (Client / Freelancer / Admin)
@@ -214,7 +214,7 @@ Both users submit reviews
 
 • 📜 Logging for important system actions
 
-
+<a id="authentication"></a>
 ## 🔐 Authentication
 
 Authentication uses JWT tokens.
@@ -236,7 +236,7 @@ GET  /api/profile/
 GET  /api/users/
 ```
 
-
+<a id="projects"></a>
 ## 📂 Projects
 
 Clients can create and manage projects.
@@ -266,7 +266,7 @@ PATCH  /api/projects/{id}/
 DELETE /api/projects/{id}/
 ```
 
-
+<a id="proposals"></a>
 ## 📨 Proposals
 
 Freelancers submit proposals to projects.
@@ -291,7 +291,7 @@ DELETE /api/proposals/{id}/
 ```
 
 
-
+<a id="contracts"></a>
 ## 📜 Contracts
 
 A contract is created when a proposal is accepted.
@@ -315,7 +315,7 @@ GET    /api/contracts/{id}/
 PATCH  /api/contracts/{id}/status/
 ```
 
-
+<a id="messaging"></a>
 ## 💬 Messaging
 
 Users communicate inside contracts.
@@ -337,7 +337,7 @@ GET    /api/messages/?contract={contract_id}
 PATCH  /api/messages/{id}/read/
 ```
 
-
+<a id="notifications"></a>
 ## 🔔 Notifications
 
 Notifications are generated for important actions
@@ -354,7 +354,7 @@ PATCH /api/notifications/{id}/read/
 ```
 
 
-
+<a id="reviews"></a>
 ## ⭐ Reviews
 
 After a contract is completed users can review each other.
@@ -375,7 +375,7 @@ POST  /api/reviews/
 GET   /api/reviews/?contract={contract_id}
 ```
 
-
+<a id="admin-apis"></a>
 ## 🛠 Admin APIs
 
 Admin endpoints provide system monitoring.
@@ -385,7 +385,7 @@ GET /api/admin/contracts/
 GET /api/admin/reviews/
 ```
 
-
+<a id="testing"></a>
 ## 🧪 Testing
 
 The project includes automated tests covering models,
@@ -411,7 +411,7 @@ Integration flow tested
 Auth → Project → Proposal → Contract → Review
 ```
 
-
+<a id="demo-data"></a>
 ## 📊 Demo Data
 
 The project includes a demo data seeder.
@@ -432,7 +432,7 @@ messages
 reviews
 ```
 
-
+<a id="project-structure"></a>
 ## 📁 Project Structure
 ```
 freelance-backend/
@@ -457,7 +457,7 @@ README.md
 API_DOCUMENTATION.md
 ```
 
-
+<a id="quick-start"></a>
 ## ⚡ Quick Start
 
 Clone repository
@@ -491,7 +491,7 @@ Start development server
 
 python manage.py runserver
 
-
+<a id="learning-outcomes"></a>
 ## 🎓 Learning Outcomes
 
 Through this project the following concepts were explored:
@@ -506,7 +506,7 @@ Through this project the following concepts were explored:
 • 🚦 Rate limiting and security practices  
 • 📜 Logging important backend actions  
 
-
+<a id="project-context"></a>
 ## 📖 Project Context
 
 This project was developed as part of the **Infosys Springboard Internship Program**
@@ -516,7 +516,7 @@ The focus of the internship project was to design and implement a
 production-style backend system demonstrating REST API design,
 authentication, validation, testing, and secure backend practices.
 
-
+<a id="author"></a>
 ## 👨‍💻 Author
 
 Harsh Kumar Nagre  
