@@ -41,9 +41,9 @@ notifications, and reviews between clients and freelancers.
 - [👨‍💻 Author](#author)
 
 
---------------------------------------------------
+
 ##📘 API Documentation
---------------------------------------------------
+
 
 The backend provides interactive API documentation using Swagger (OpenAPI).
 
