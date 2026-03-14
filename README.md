@@ -517,9 +517,7 @@ production-style backend system demonstrating REST API design,
 authentication, validation, testing, and secure backend practices.
 
 
---------------------------------------------------
-👨‍💻 Author
---------------------------------------------------
+## 👨‍💻 Author
 
 Harsh Kumar Nagre  
 Infosys Springboard Intern
