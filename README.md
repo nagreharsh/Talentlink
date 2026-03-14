@@ -42,7 +42,7 @@ notifications, and reviews between clients and freelancers.
 
 
 
-📘 ##API Documentation
+## 📘 API Documentation
 
 
 The backend provides interactive API documentation using Swagger (OpenAPI).
@@ -106,7 +106,7 @@ The API documentation automatically reflects all backend endpoints including:
 📊 Dashboard APIs
 
 
-##📌 Project Overview
+## 📌 Project Overview
 
 The platform simulates a freelancing marketplace where:
 
