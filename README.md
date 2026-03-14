@@ -120,7 +120,8 @@ The platform simulates a freelancing marketplace where:
 
 Platform workflow:
 
-`User Authentication
+```
+User Authentication
       ↓
 Project Creation
       ↓
@@ -132,7 +133,8 @@ Messaging
       ↓
 Contract Completion
       ↓
-Review System`
+Review System
+```
 
 
 --------------------------------------------------
@@ -168,7 +170,8 @@ Additional Libraries
 🔄 Platform Workflow
 --------------------------------------------------
 
-`Client registers/login
+```
+Client registers/login
         |
         v
 Client posts project
@@ -189,7 +192,8 @@ Client & Freelancer exchange messages
 Work completed
         |
         v
-Both users submit reviews`
+Both users submit reviews
+```
 
 
 --------------------------------------------------
@@ -227,16 +231,20 @@ Authentication uses JWT tokens.
 
 Typical flow:
 
-`Register → Login → Receive access token → Use token in requests`
+```
+Register → Login → Receive access token → Use token in requests
+```
 
 
 Authentication APIs
 
-`POST /api/register/
+```
+POST /api/register/
 POST /api/login/
 POST /api/refresh/
 GET  /api/profile/
-GET  /api/users/`
+GET  /api/users/
+```
 
 
 --------------------------------------------------
@@ -262,11 +270,13 @@ completed
 
 Endpoints
 
-`GET    /api/projects/
+```
+GET    /api/projects/
 POST   /api/projects/
 GET    /api/projects/{id}/
 PATCH  /api/projects/{id}/
-DELETE /api/projects/{id}/`
+DELETE /api/projects/{id}/
+```
 
 
 --------------------------------------------------
@@ -286,11 +296,13 @@ Duplicate proposals from the same freelancer to the same project are prevented.
 
 Endpoints
 
-`GET    /api/proposals/
+```
+GET    /api/proposals/
 POST   /api/proposals/
 GET    /api/proposals/{id}/
 PATCH  /api/proposals/{id}/
-DELETE /api/proposals/{id}/`
+DELETE /api/proposals/{id}/
+```
 
 
 --------------------------------------------------
@@ -311,10 +323,12 @@ Proposal → Contract → Active Work → Completed
 
 Endpoints
 
-`GET    /api/contracts/
+```
+GET    /api/contracts/
 POST   /api/contracts/
 GET    /api/contracts/{id}/
-PATCH  /api/contracts/{id}/status/`
+PATCH  /api/contracts/{id}/status/
+```
 
 
 --------------------------------------------------
@@ -334,9 +348,11 @@ timestamp
 
 Endpoints
 
-`POST   /api/messages/
+```
+POST   /api/messages/
 GET    /api/messages/?contract={contract_id}
-PATCH  /api/messages/{id}/read/`
+PATCH  /api/messages/{id}/read/
+```
 
 
 --------------------------------------------------
@@ -351,8 +367,10 @@ Notifications are generated for important actions
 
 Endpoints
 
-`GET   /api/notifications/
-PATCH /api/notifications/{id}/read/`
+```
+GET   /api/notifications/
+PATCH /api/notifications/{id}/read/
+```
 
 
 --------------------------------------------------
@@ -372,8 +390,10 @@ Duplicate reviews are prevented.
 
 Endpoints
 
-`POST  /api/reviews/
-GET   /api/reviews/?contract={contract_id}`
+```
+POST  /api/reviews/
+GET   /api/reviews/?contract={contract_id}
+```
 
 
 --------------------------------------------------
@@ -382,8 +402,10 @@ GET   /api/reviews/?contract={contract_id}`
 
 Admin endpoints provide system monitoring.
 
-`GET /api/admin/contracts/
-GET /api/admin/reviews/`
+```
+GET /api/admin/contracts/
+GET /api/admin/reviews/
+```
 
 
 --------------------------------------------------
@@ -409,7 +431,9 @@ python manage.py test tests
 
 Integration flow tested
 
-`Auth → Project → Proposal → Contract → Review`
+```
+Auth → Project → Proposal → Contract → Review
+```
 
 
 --------------------------------------------------
