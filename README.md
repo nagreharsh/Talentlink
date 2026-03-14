@@ -418,12 +418,12 @@ permissions, validation, and workflow.
 Test Coverage
 
 9 automated tests including
-```
+
 • 🧪 Unit tests for models
 • 🔗 Integration workflow tests
 • 🔐 Permission validation
 • ✔ API validation tests
-```
+
 Run tests
 
 python manage.py test tests
